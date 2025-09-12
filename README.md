@@ -39,7 +39,7 @@ Your task is to clean it up, reorganize the code, and prepare a proper project s
 ### 3. Makefile
 - Fix the **Makefile** so that it compiles all project files from the correct directories (use `*` patterns if possible).  
 - Ensure test sources are compiled into a **separate executable**.  
-- Add include guards (`#ifndef … #define … #endif`) or `#pragma once` in headers to prevent multiple inclusion.  
+- Add include guards (`#ifndef … #define … #endif`) in headers to prevent multiple inclusion.  
 - The main build should **not** expose or run tests — tests are for development only.  
 
 ---
