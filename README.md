@@ -57,7 +57,7 @@ Your task is to clean it up, reorganize the code, and prepare a proper project s
   /bin/
 
 ### Deliverable
-After completing the cleanup and reorganization:
+After completing the cleanup and reorganization (only CMD!):
 
 - tree /f > result.txt
 - git log --graph >> result.txt
