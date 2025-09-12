@@ -59,9 +59,9 @@ Your task is to clean it up, reorganize the code, and prepare a proper project s
 ### Deliverable
 After completing the cleanup and reorganization:
 
-tree /f > result.txt
-git log --graph >> result.txt
-git remote get-url origin >> result.txt
+- tree /f > result.txt
+- git log --graph >> result.txt
+- git remote get-url origin >> result.txt
 
 
 
