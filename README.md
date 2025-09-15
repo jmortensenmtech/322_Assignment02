@@ -1,3 +1,5 @@
+
+
 # 🧹 Repository Cleanup Assignment
 
 This repository is intentionally **messy**.  
@@ -10,7 +12,10 @@ Your task is to clean it up, reorganize the code, and prepare a proper project s
 1. **Fork this repository** into your own GitHub account.  
    👉 Forking is mandatory — the final step is to return the link to your own repo.  
 2. Work only in your fork. Do not push changes to the instructor’s repo.
-
+3. Every file modification — whether it's a deletion, renaming, or adding even a single ASCII character — must be tracked with a Git commit that includes a clear and meaningful message.
+👉 Commit messages should clearly explain what was changed and why.
+4. **At the end**, don’t forget to run git push to upload all your changes to your forked repository.
+👉 Otherwise, your work won't be visible on GitHub and cannot be reviewed.
 ---
 
 ## ✅ Tasks
