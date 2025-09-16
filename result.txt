@@ -1,0 +1,96 @@
+Folder PATH listing
+Volume serial number is 5AD8-228B
+C:.
+¦   .gitignore
+¦   code.c
+¦   code2.c
+¦   Makefile
+¦   result.txt
+¦   
++---.vscode
+¦       launch.json
+¦       settings.json
+¦       tasks.json
+¦       
++---bin
+¦       main.exe
+¦       tests.exe
+¦       
++---include
++---obj
+¦       code.o
+¦       main.o
+¦       tests.o
+¦       unity.o
+¦       
++---src
+¦       main.c
+¦       
++---tests
+        tests.c
+        unity.c
+        unity.h
+        unity_internals.h
+        
+* commit fb42b831ea271382743302f3607ab2fd105726c7
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Fri Sep 12 07:15:01 2025 -0600
+| 
+|     fix .gitignore
+| 
+* commit 9ed4bb1b5c0103680a0ca0a104309428c2143f7f
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Fri Sep 12 07:13:24 2025 -0600
+| 
+|     add tests/
+|   
+*   commit 3d7e2d6be82361851d3dc1afaacafdf5dbe7e06b
+|\  Merge: faee1ad 17de3fc
+| | Author: Jacob Pach <jpach@mtech.edu>
+| | Date:   Fri Sep 12 07:12:25 2025 -0600
+| | 
+| |     Merge branch 'fixbug2'
+| | 
+| * commit 17de3fc514c17cb4892e8d678b41d3df9d3f1526
+| | Author: Jacob Pach <jpach@mtech.edu>
+| | Date:   Fri Sep 12 07:06:33 2025 -0600
+| | 
+| |     add code2.c
+| |   
+* |   commit faee1ad92a95dcdcc35ffd25c2823cedc70a9fb8
+|\ \  Merge: 7410bbd 7c3ff76
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:12:12 2025 -0600
+| | | 
+| | |     Merge branch 'fixbug'
+| | | 
+| * | commit 7c3ff76af2f1245c5be58ee06cd0a6f43f5b76e4
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:07:11 2025 -0600
+| | | 
+| | |     add code.c
+| | | 
+| * | commit 1559b41825849b541956a3549332114b3e151be8
+| | | Author: Jacob Pach <jpach@mtech.edu>
+| | | Date:   Fri Sep 12 07:03:12 2025 -0600
+| | | 
+| | |     add ./vscode for vsc
+| | | 
+* | | commit 7410bbd7b220139649e0e2b08b48c448c393d07f
+| |/  Author: Jacob Pach <jpach@mtech.edu>
+|/|   Date:   Fri Sep 12 07:11:00 2025 -0600
+| |   
+| |       add .gitignore
+| | 
+* | commit 2db5c5927ad8031763f120ef983a580a35ad4137
+|/  Author: Jacob Pach <jpach@mtech.edu>
+|   Date:   Fri Sep 12 07:04:36 2025 -0600
+|   
+|       move main.c to /src
+| 
+* commit ceebb9b545b7469b488918e048b1cd936def0533
+  Author: Jacob Pach <jpach@mtech.edu>
+  Date:   Fri Sep 12 07:01:45 2025 -0600
+  
+      add main.c, makefile
+https://github.com/jpach-cs/322_Assignment02.git
