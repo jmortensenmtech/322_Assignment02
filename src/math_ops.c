@@ -30,3 +30,8 @@ float pow(float base, int exponent )
     }
     return res;
 }
+
+float sub(float a, float b)
+{
+    return a - b;
+}
