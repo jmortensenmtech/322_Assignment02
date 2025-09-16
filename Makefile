@@ -7,8 +7,8 @@ BIN_DIR = bin
 OBJ_DIR = obj
 
 
-APP_OBJS   = $(OBJ_DIR)/main.o $(OBJ_DIR)/code.o
-TEST_OBJS  = $(OBJ_DIR)/tests.o $(OBJ_DIR)/code.o $(OBJ_DIR)/unity.o
+APP_OBJS   = $(OBJ_DIR)/main.o $(OBJ_DIR)/math_ops.o
+TEST_OBJS  = $(OBJ_DIR)/tests.o $(OBJ_DIR)/math_ops.o $(OBJ_DIR)/unity.o
 
 APP_TARGET  = $(BIN_DIR)/main.exe
 TEST_TARGET = $(BIN_DIR)/tests.exe
@@ -30,7 +30,7 @@ $(TEST_TARGET): $(TEST_OBJS)
 $(OBJ_DIR)/main.o: $(SRC_DIR)/main.c 
 	$(CC) $(CFLAGS) -c $< -o $@
 
-$(OBJ_DIR)/code.o: make_ops.c
+$(OBJ_DIR)/math_ops.o: make_ops.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
 $(OBJ_DIR)/tests.o: $(TEST_DIR)/tests.c
