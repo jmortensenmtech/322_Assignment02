@@ -68,6 +68,17 @@ int main(int argc, char *argv[])
             float a = atof(argv[2]);
             float b = atof(argv[3]);
             printf("%f\n", divide(a, b));
+        } else if (strcmp(argv[1], "--power") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            int b = atoi(argv[3]);
+            printf("%f\n", pow(a, b));
+        } else if (strcmp(argv[1], "--square") == 0 && argc == 3) {
+            float a = atof(argv[2]);
+            printf("%f\n", square(a));
+        } else if (strcmp(argv[1], "--cube") == 0 && argc == 3) {
+            float a = atof(argv[2]);
+            printf("%f\n", cube(a));
+        }
     }
     else
     {
