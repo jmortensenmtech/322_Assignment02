@@ -1,37 +1,171 @@
-Folder PATH listing
-Volume serial number is 5AD8-228B
+Folder PATH listing for volume Windows
+Volume serial number is D055-6E7E
 C:.
-¦   .gitignore
-¦   code.c
-¦   code2.c
-¦   Makefile
-¦   result.txt
-¦   
+ï¿½   .gitignore
+ï¿½   Makefile
+ï¿½   README.md
+ï¿½   result.txt
+ï¿½   
 +---.vscode
-¦       launch.json
-¦       settings.json
-¦       tasks.json
-¦       
+ï¿½       launch.json
+ï¿½       settings.json
+ï¿½       tasks.json
+ï¿½       
 +---bin
-¦       main.exe
-¦       tests.exe
-¦       
+ï¿½       main.exe
+ï¿½       tests.exe
+ï¿½       
 +---include
+ï¿½       math_ops.h
+ï¿½       
 +---obj
-¦       code.o
-¦       main.o
-¦       tests.o
-¦       unity.o
-¦       
+ï¿½       main.o
+ï¿½       math_ops.o
+ï¿½       tests.o
+ï¿½       unity.o
+ï¿½       
 +---src
-¦       main.c
-¦       
+ï¿½       main.c
+ï¿½       math_ops.c
+ï¿½       
 +---tests
         tests.c
         unity.c
         unity.h
         unity_internals.h
         
+* commit d6c6ae44e9dc56ed44c775e3607c4a57e0f7889a
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:26:11 2025 -0600
+| 
+|     Fixed gitignore, obj bin and result.txt.
+| 
+* commit b3e978ea85d3a8bcf069e7681985babd2f4447ff
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:22:24 2025 -0600
+| 
+|     Implemented math functions in main.c.
+| 
+* commit 479345b0b0eaa4ff81a20112e495cf54c62ad0c5
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:16:57 2025 -0600
+| 
+|     Added division to math_ops.h.
+| 
+* commit a0acd73ca813609c56735a0e6c7a4bffe06a3a78
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:08:44 2025 -0600
+| 
+|     Added division to math_ops.h.
+| 
+* commit 93d9ffd32ec8bf0ee429c6174f4e89526af0542f
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:04:21 2025 -0600
+| 
+|     Added include math_ops.h to math_ops.c.
+| 
+* commit 2e1ba97f8d91bb8eb7af353871abaf4670b3eb12
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 18:03:28 2025 -0600
+| 
+|     Added division to math_ops.c.
+| 
+* commit 2a04f0217bba1e9838911e786c73111814b9ccd4
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 17:59:01 2025 -0600
+| 
+|     Added include math_ops.h to main.c.
+| 
+* commit de7a81d840897d42056da0dd761a4c306f24079e
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 17:56:56 2025 -0600
+| 
+|     Created header for math_ops.
+| 
+* commit 465dfecdeea06c5a2d05bc72fafdb999f1d8243b
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 17:48:45 2025 -0600
+| 
+|     Changed code.o references to math_ops.o.
+| 
+* commit 0d2ecb089efd37a64366d6f5df995772190bddbd
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 17:47:23 2025 -0600
+| 
+|     Changed code.o to math_ops.o.
+| 
+* commit 8216b1b3fa36ec7c933bc2f1de02727716577d63
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 17:45:52 2025 -0600
+| 
+|     Fixed MakeFile compilation.
+| 
+* commit 64d47a57148892909891ac8b40edc5b5e37e3a02
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 16:35:39 2025 -0600
+| 
+|     Moved math function from main.c to math_ops.c
+| 
+* commit cac3c483dc257e22ee4ab0c89f7bb603f31cd73b
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 16:28:09 2025 -0600
+| 
+|     Deleted code.c and code2.c.
+| 
+* commit 7034fa307d4b20711545aabf1f4ed0f022001ecb
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 16:25:28 2025 -0600
+| 
+|     Added code2.c math functions to math_ops.
+| 
+* commit 848738777817f04a6e9552314762b81b1e88b381
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 16:23:00 2025 -0600
+| 
+|     Added code.c math functions to math_ops.
+| 
+* commit cb10abe917aeba2c24d00150c6b06a612f5b26ac
+| Author: jmortensenmtech <jmortensen@mtech.edu>
+| Date:   Tue Sep 16 16:15:00 2025 -0600
+| 
+|     Created math_ops.c in src.
+| 
+* commit 0172015a475989e4132ff786dc58cc01d0f1b3bf
+| Author: Jacob Pach <jpach@mtech.edu>
+| Date:   Tue Sep 16 13:18:55 2025 -0600
+| 
+|     update gitignore
+| 
+* commit b135f73754c9663ec24ff8b99bfa293a4c0d9e08
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Mon Sep 15 10:18:29 2025 -0600
+| 
+|     Update README.md
+| 
+* commit ac72030664d874b40f7c25263d11d634e65fb5bb
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:40:11 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 6ef4aa973d153f528af36c61992f6bc19d9e25b0
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:38:26 2025 -0600
+| 
+|     Update README.md
+| 
+* commit d0d54cb34b91099cbd941b6689a8b61c7e997d6b
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:37:19 2025 -0600
+| 
+|     Update README.md
+| 
+* commit 33d73a84aaedfad70cf066c4235bff9f83400aa3
+| Author: jpach-cs <jlpach@outlook.com>
+| Date:   Fri Sep 12 07:36:42 2025 -0600
+| 
+|     Create README.md
+| 
 * commit fb42b831ea271382743302f3607ab2fd105726c7
 | Author: Jacob Pach <jpach@mtech.edu>
 | Date:   Fri Sep 12 07:15:01 2025 -0600
@@ -93,4 +227,4 @@ C:.
   Date:   Fri Sep 12 07:01:45 2025 -0600
   
       add main.c, makefile
-https://github.com/jpach-cs/322_Assignment02.git
+https://github.com/jmortensenmtech/322_Assignment02.git
