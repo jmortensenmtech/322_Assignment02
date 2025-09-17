@@ -52,6 +52,22 @@ int main(int argc, char *argv[])
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
         }
+        else if (strcmp(argv[1], "--addition") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            float b = atof(argv[3]);
+            printf("%f\n", add(a, b));
+        } else if (strcmp(argv[1], "--subtraction") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            float b = atof(argv[3]);
+            printf("%f\n", sub(a, b));
+        } else if (strcmp(argv[1], "--multiplication") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            float b = atof(argv[3]);
+            printf("%f\n", multiply(a, b));
+        } else if (strcmp(argv[1], "--division") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            float b = atof(argv[3]);
+            printf("%f\n", divide(a, b));
     }
     else
     {
