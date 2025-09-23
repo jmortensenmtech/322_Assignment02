@@ -17,4 +17,8 @@ float sub(float a, float b);
 
 float divide(float a, float b);
 
+float sin(float a, int steps);
+
+float cos(float a, int steps);
+
 #endif 
