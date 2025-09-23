@@ -51,6 +51,8 @@ int main(int argc, char *argv[])
             printf("  --power a b          Raise a to the power of b\n");
             printf("  --square a           Square of a number\n");
             printf("  --cube a             Cube of a number\n");
+            printf("  --sin a steps        Sin in radians of a number\n");
+            printf("  --cos a steps        Cosine in radians of a number\n");
         }
         else if (strcmp(argv[1], "--addition") == 0 && argc == 4) {
             float a = atof(argv[2]);
@@ -78,6 +80,14 @@ int main(int argc, char *argv[])
         } else if (strcmp(argv[1], "--cube") == 0 && argc == 3) {
             float a = atof(argv[2]);
             printf("%f\n", cube(a));
+        } else if (strcmp(argv[1], "--sin") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+             int steps = atoi(argv[3]);
+            printf("%f\n", sin(a, steps)); 
+        } else if (strcmp(argv[1], "--cos") == 0 && argc == 4) {
+            float a = atof(argv[2]);
+            int steps = atoi(argv[3]);
+            printf("%f\n", cos(a, steps)); 
         }
     }
     else
