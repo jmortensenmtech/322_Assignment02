@@ -50,20 +50,6 @@ float divide(float a, float b)
 
 float sin(float a, int steps)
 {
-    //hardcode steps and convert a into radians
-    steps = 10;
-    a = a * 3.14159265358979323846f / 180.0f;
-
-    float result = 0.0f;
-    float term = a;
-
-    result += term;
-
-    for (int i = 1; i < steps; ++i) {
-        int power = 2 * i + 1;
-        term *= -a * a / ((power - 1) * power);
-        result += term;
-    }
-
-    return result;
+    return 1.0  
+    // change applied
 }
