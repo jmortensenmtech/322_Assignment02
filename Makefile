@@ -1,41 +1,43 @@
-CC = gcc
-CFLAGS = -g -Wall -std=c99 -pedantic
+CC := gcc
+CFLAGS := -g -Wall -std=c99 -pedantic -I$(INC_DIR)
+LFLAGS := -g
 
-SRC_DIR = src
-TEST_DIR = tests
-BIN_DIR = bin
-OBJ_DIR = obj
+# directories
+SRC_DIR := SRC_DIR
+OBJ_DIR := OBJ_DIR
+BIN_DIR := BIN_DIR
+INC_DIR := INC_DIR
 
+# target and objs
+OBJS := $(OBJ_DIR)/main.o $(OBJ_DIR)/math_ops.o
+TARGET := $(BIN_DIR)/main.exe
 
-APP_OBJS   = $(OBJ_DIR)/main.o $(OBJ_DIR)/math_ops.o
-TEST_OBJS  = $(OBJ_DIR)/tests.o $(OBJ_DIR)/math_ops.o $(OBJ_DIR)/unity.o
+.PHONY: all clean check-shell
 
-APP_TARGET  = $(BIN_DIR)/main.exe
-TEST_TARGET = $(BIN_DIR)/tests.exe
+RM := rm -f
 
-.PHONY: all app test clean
+# default target
+all: $(TARGET)
 
-all: app test
+# create directories if they arent there
+$(OBJ_DIR):
+	mkdir -p $(OBJ_DIR)
 
-app: $(APP_TARGET)
-test: $(TEST_TARGET)
+$(BIN_DIR):
+	mkdir -p $(BIN_DIR)
 
-$(APP_TARGET): $(APP_OBJS)
-	$(CC) $(APP_OBJS) -o $@
+# link the executable
+$(TARGET): $(OBJS) | $(BIN_DIR)
+	$(CC) $(LFLAGS) $(OBJ_DIR)/main.o $(OBJ_DIR)/math_ops.o -o $(TARGET)
 
-$(TEST_TARGET): $(TEST_OBJS)
-	$(CC) $(TEST_OBJS) -o $@
+# compile main.c
+$(OBJ_DIR)/main.o: $(SRC_DIR)/main.c | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/main.c -o $(OBJ_DIR)/main.o
 
-# compilation
-$(OBJ_DIR)/main.o: $(SRC_DIR)/main.c 
-	$(CC) $(CFLAGS) -c $< -o $@
+# compile math_ops.c
+$(OBJ_DIR)/math_ops.o: $(SRC_DIR)/math_ops.c $(INC_DIR)/math_ops.h | $(OBJ_DIR)
+	$(CC) $(CFLAGS) -c $(SRC_DIR)/math_ops.c -o $(OBJ_DIR)/math_ops.o
 
-$(OBJ_DIR)/math_ops.o: make_ops.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(OBJ_DIR)/tests.o: $(TEST_DIR)/tests.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
-$(OBJ_DIR)/unity.o: $(TEST_DIR)/unity.c
-	$(CC) $(CFLAGS) -c $< -o $@
-
+# clean
+clean:
+	$(RM) $(OBJ_DIR)/*.o $(TARGET)
